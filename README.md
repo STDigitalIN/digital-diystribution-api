@@ -48,6 +48,13 @@ Before a content supplier can use the ST Digital Distribution API, they must obt
 }
 ```
 
+---
+
+- title *Required*
+- genre *Required, Find the availabel genres below*
+- subgenre *Required, Find the available genres below*
+- label *Required*
+
 ## Points to remember
 - Each release must have a unique batch folder.
 - If a release contains multiple tracks, upload all tracks within the same batch folder.
