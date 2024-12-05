@@ -16,7 +16,35 @@ Before a content supplier can use the ST Digital Distribution API, they must obt
 # Metadata File Structure
 ``` json
 {
-  "name":"Ajay"
+  "title": "Release Title",
+  "genre": "Release Genre",
+  "subgenre": "Release Subgenre",
+  "label": "Release Label",
+  "physicalReleaseDate": "Physical Release Date",
+  "storeReleaseDate": "Store Release Date",
+  "cline": "© Line",
+  "productionYear": "Production Year",
+  "catalogueNumber": "Catalogue Number",
+  "coverPhoto": "Path to cover photo",
+  "tracks": [{
+    "title": "Track Title", 
+    "primaryArtist":[
+      {
+        "name": "Primary Artist Name",
+        "spotifyId": "Primary Artist Spotify ID",
+        "youtubeId": "Primary Artist Youtube ID"
+      }
+    ],
+    "writers":["Writer 1", "Writer 2"],
+    "composers":["Composer 1", "Composer 2"],
+    "musicDirectors":["Music Director 1", "Music Director 2"],
+    "producers":["Producer 1", "Producer 2"],
+    "publisher":"Publisher Name",
+    "language":"Language",
+    "youtubeUrl":"Youtube URL",
+    "lyrics":"Lyrics",
+    "mediaUrl":"Media URL"
+  }]
 }
 ```
 
