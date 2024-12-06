@@ -59,7 +59,7 @@ Before a content supplier can use the ST Digital Distribution API, they must obt
 - cline *`Required, Should not be same as release title, maxLength: 300`*
 - productionYear *`Required, format: YYYY`*
 - catalogueNumber *`Required, format: alphanumeric, maxLength: 20`*
-- coverPhoto *`Required, Cover photo file path example: /st-bucket-name/your-folder/batchFolder/image.jpg, size: 3000x3000`*
+- coverPhoto *`Required, Cover photo file path example: /st-bucket-name/your-folder/batchFolder/image.jpg, dimension: 3000x3000`*
 - tracks.title *`Required, maxLength: 150`*
 - tracks.primaryArtist: *`Required, Array of primaryArtist with name,spotifyId and youtubeId, only name is required`*
 - tracks.writers: *`Required, Array of string`*
