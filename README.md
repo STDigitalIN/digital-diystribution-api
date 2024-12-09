@@ -25,7 +25,7 @@ Before a content supplier can use the ST Digital Distribution API, they must obt
   "cline": "© Line",
   "productionYear": "Production Year",
   "catalogueNumber": "Catalogue Number",
-  "coverPhoto": "Path to cover photo",
+  "coverPhoto": "cover photo file name with extenction",
   "tracks": [{
     "title": "Track Title", 
     "primaryArtist":[
@@ -43,7 +43,7 @@ Before a content supplier can use the ST Digital Distribution API, they must obt
     "language":"Language",
     "youtubeUrl":"Youtube URL",
     "lyrics":"Lyrics",
-    "mediaUrl":"Media URL"
+    "mediaUrl":"Audio file name with extenction"
   }]
 }
 ```
@@ -59,7 +59,7 @@ Before a content supplier can use the ST Digital Distribution API, they must obt
 - cline *`Required, Should not be same as release title, maxLength: 300`*
 - productionYear *`Required, format: YYYY`*
 - catalogueNumber *`Required, format: alphanumeric, maxLength: 20`*
-- coverPhoto *`Required, Cover photo file path example: /st-bucket-name/your-folder/batchFolder/image.jpg, dimension: 3000x3000`*
+- coverPhoto *`Required, Cover photo file name: any_name.jpg, dimension: 3000x3000`*
 - tracks.title *`Required, maxLength: 150`*
 - tracks.primaryArtist: *`Required, Array of primaryArtist with name,spotifyId and youtubeId, only name is required`*
 - tracks.writers: *`Required, Array of string`*
@@ -70,7 +70,7 @@ Before a content supplier can use the ST Digital Distribution API, they must obt
 - tracks.language: *`Required, Find the availabel languages below`*
 - tracks.youtubeUrl: *`Required, Must be a youtube video url`*
 - tracks.lyrics: *`Optional, maxLength:3000`*
-- tracks.mediaUrl: *`Required, Audio file path example: /st-bucket-name/your-folder/batchFolder/file.wav, acceptedFormat:.wav, maxFileSize: 800mb`*
+- tracks.mediaUrl: *`Required, Audio file name: any_name.wav, acceptedFormat:.wav, maxFileSize: 800mb`*
 
 ## Points to remember
 - Each release must have a unique batch folder.
