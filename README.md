@@ -53,14 +53,14 @@ Before a content supplier can use the ST Digital Distribution API, they must obt
 ---
 
 - title *`Required, maxLength: 150`*
-- upc *`Optional, If present, should be unique acress all the releases, length: 12`*
+- upc *`Optional, If present, should be unique acress all the releases, type: String, length: 12`*
 - genre *`Required, Find the availabel genres below`*
 - subgenre *`Required, Find the available genres below, should be associated with the genre field`*
 - label *`Required, maxLength: 70, If an associated label with your account already exists in our database, it will be used; otherwise, a new label will be created.`*
 - physicalReleaseDate *`Required, format: YYYY-MM-DD`*
 - storeReleaseDate *`Required, format: YYYY-MM-DD`*
 - cline *`Required, Should not be same as release title, maxLength: 300`*
-- productionYear *`Required, format: YYYY`*
+- productionYear *`Required, format: YYYY, type: String`*
 - catalogueNumber *`Required, format: alphanumeric, maxLength: 20`*
 - coverPhoto *`Required, Cover photo file name: any_name.jpg, dimension: 3000x3000`*
 - tracks.title *`Required, maxLength: 150`*
