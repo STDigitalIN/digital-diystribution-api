@@ -17,6 +17,7 @@ Before a content supplier can use the ST Digital Distribution API, they must obt
 ``` json
 { 
   "title": "Release Title",
+  "upc": "12 digit UPC",
   "genre": "Release Genre",
   "subgenre": "Release Subgenre",
   "label": "Label Name",
@@ -27,7 +28,8 @@ Before a content supplier can use the ST Digital Distribution API, they must obt
   "catalogueNumber": "Catalogue Number",
   "coverPhoto": "cover photo file name with extenction",
   "tracks": [{
-    "title": "Track Title", 
+    "title": "Track Title",
+    "isrc":"ISRC code",
     "primaryArtist":[
       {
         "name": "Primary Artist Name",
@@ -51,6 +53,7 @@ Before a content supplier can use the ST Digital Distribution API, they must obt
 ---
 
 - title *`Required, maxLength: 150`*
+- upc *`Optional, If present, should be unique acress all the releases, length: 12`*
 - genre *`Required, Find the availabel genres below`*
 - subgenre *`Required, Find the available genres below, should be associated with the genre field`*
 - label *`Required, maxLength: 70, If an associated label with your account already exists in our database, it will be used; otherwise, a new label will be created.`*
@@ -61,6 +64,7 @@ Before a content supplier can use the ST Digital Distribution API, they must obt
 - catalogueNumber *`Required, format: alphanumeric, maxLength: 20`*
 - coverPhoto *`Required, Cover photo file name: any_name.jpg, dimension: 3000x3000`*
 - tracks.title *`Required, maxLength: 150`*
+- tracks.isrc *`Optional, If present, should be unique acress all the tracks, format:QZZ432375885`*
 - tracks.primaryArtist: *`Required, Array of primaryArtist with name,spotifyId and youtubeId, only name is required`*
 - tracks.writers: *`Required, Array of string`*
 - tracks.composers: *`Optional, Array of string`*
