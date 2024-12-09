@@ -15,8 +15,7 @@ Before a content supplier can use the ST Digital Distribution API, they must obt
 
 # Metadata File Structure
 ``` json
-{
-  "batchId":"Unique Batch Id"
+{ 
   "title": "Release Title",
   "genre": "Release Genre",
   "subgenre": "Release Subgenre",
@@ -51,7 +50,6 @@ Before a content supplier can use the ST Digital Distribution API, they must obt
 
 ---
 
-- batchId *`Required, format: YYYYMMDDHHmmsssnnn`*
 - title *`Required, maxLength: 150`*
 - genre *`Required, Find the availabel genres below`*
 - subgenre *`Required, Find the available genres below, should be associated with the genre field`*
