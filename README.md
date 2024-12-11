@@ -45,7 +45,7 @@ Before a content supplier can use the ST Digital Distribution API, they must obt
     "language":"Language",
     "youtubeUrl":"Youtube URL",
     "lyrics":"Lyrics",
-    "mediaUrl":"Audio file name with extenction"
+    "media":"Audio file name with extenction"
   }]
 }
 ```
@@ -74,7 +74,7 @@ Before a content supplier can use the ST Digital Distribution API, they must obt
 - tracks.language: *`Required, Find the availabel languages below`*
 - tracks.youtubeUrl: *`Required, Must be a youtube video url`*
 - tracks.lyrics: *`Optional, maxLength:3000`*
-- tracks.mediaUrl: *`Required, Audio file name: any_name.wav, acceptedFormat:.wav, maxFileSize: 800mb`*
+- tracks.media: *`Required, Audio file name: any_name.wav, acceptedFormat:.wav, maxFileSize: 800mb`*
 
 ## Points to remember
 - Each release must have a unique batch folder.
