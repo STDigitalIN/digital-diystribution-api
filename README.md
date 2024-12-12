@@ -80,7 +80,6 @@ Before a content supplier can use the ST Digital Distribution API, they must obt
 - Each release must have a unique batch folder.
 - If a release contains multiple tracks, upload all tracks within the same batch folder.
 - The metadata file should contain accurate and up-to-date information.
-- The metadata file must include the absolute path for all media files (Audio and Cover Photo), formatted as `bucket-name/your-folder/batch-folder/filename.extension`.
 
 > Resources
 
