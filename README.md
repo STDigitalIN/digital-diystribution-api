@@ -1,4 +1,4 @@
-# Prerequisites
+# Prerequisites 
 Before a content supplier can use the ST Digital Distribution API, they must obtain access to ST Digital's AWS S3 bucket to upload their content.
 
 
